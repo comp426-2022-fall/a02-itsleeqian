@@ -52,7 +52,7 @@ if (args.d >= 0) {
 
 // URL
 let url = "https://api.open-meteo.com/v1/forecast?";
-url = url + 'latitude=' + latitude + '&longitude=' + longitude + "&timezone=" + timezone + "&daily=precipitation_hours";
+url = url + 'latitude=' + latitude + '&longitude=' + longitude + "&hourly=temperature_2m,windspeed_180m,winddirection_180m&daily=weathercode,precipitation_hours&temperature_unit=fahrenheit" + "&timezone=" + timezone + "&daily=precipitation_hours";
 //console.log(url); //for checking of values
 
 // Make a request
